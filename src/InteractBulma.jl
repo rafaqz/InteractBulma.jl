@@ -6,9 +6,7 @@ using Reexport
 using WebIO
 @reexport using InteractBase
 
-import InteractBase:
-    dropdown,
-    getclass
+import InteractBase: dropdown
 
 export Bulma
 
@@ -40,7 +38,6 @@ function __init__()
     nothing
 end
 
-include("classes.jl")
 include("widgets.jl")
 
 end # module
