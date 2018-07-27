@@ -18,6 +18,7 @@ const bulma_slider_min_css = joinpath(@__DIR__, "..", "assets", "bulma-slider.mi
 const bulma_switch_min_css = joinpath(@__DIR__, "..", "assets", "bulma-switch.min.css")
 const bulma_accordion_min_css = joinpath(@__DIR__, "..", "assets", "bulma-accordion.min.css")
 const bulma_checkradio_min_css = joinpath(@__DIR__, "..", "assets", "bulma-checkradio.min.css")
+const bulma_tooltip_min_css = joinpath(@__DIR__, "..", "assets", "bulma-tooltip.min.css")
 const font_awesome = isdefined(InteractBase, :font_awesome) ? InteractBase.font_awesome : joinpath(Pkg.dir("InteractBase"), "assets", "all.js")
 
 function InteractBase.libraries(::Bulma)
@@ -29,6 +30,7 @@ function InteractBase.libraries(::Bulma)
             bulma_switch_min_css,
             bulma_accordion_min_css,
             bulma_checkradio_min_css,
+            bulma_tooltip_min_css,
         ]
     vcat(font_awesome, bulmalibs)
 end
